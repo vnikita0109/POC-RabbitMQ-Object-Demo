@@ -9,17 +9,21 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.stackroute</groupId>
-	<artifactId>rabbitmq-consumer-object</artifactId>
+	<artifactId>rabbitmq-object-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rabbitmq-consumer-object</name>
-	<description>Demo project for Spring Boot</description>
+	<name>rabbitmq-object-demo</name>
+	<description>Object passing demo using rabbitmq</description>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+	<modules>
+		<module>rabbitmq-producer-object</module>
+		<module>rabbitmq-consumer-object</module>
+	</modules>
 	<dependencies>
-	<!--	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
@@ -27,11 +31,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>-->
+		</dependency>
 	</dependencies>
 
 	<build>
